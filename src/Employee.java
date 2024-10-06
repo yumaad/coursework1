@@ -1,11 +1,11 @@
 import java.util.Objects;
 
 public class Employee {
+    private static int counter = 0;
     private final String name;
+    private final int id;
     private int department;
     private int salary;
-    private final int id;
-    private static int counter = 0;
 
     public Employee(String name, int department, int salary) {
         this.name = name;
@@ -22,12 +22,12 @@ public class Employee {
         return this.department;
     }
 
-    public int getSalary() {
-        return this.salary;
-    }
-
     public void setDepartment(int department) {
         this.department = department;
+    }
+
+    public int getSalary() {
+        return this.salary;
     }
 
     public void setSalary(int salary) {
