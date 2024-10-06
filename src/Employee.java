@@ -34,6 +34,10 @@ public class Employee {
         this.salary = salary;
     }
 
+    public int getId() {
+        return id;
+    }
+
     public String toString() {
         return this.name + ", отдел: " + this.department + ", зарплата: " + this.salary;
     }
